@@ -16,8 +16,30 @@ src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
  <!-- Example (optional) -->
  <script type="text/babel">
- const root = ReactDOM.createRoot(document.getElementById("app"));
- root.render(<h1>Hello React</h1>);
- </script>
+
+function Counter() {
+
+ const [count, setCount] = React.useState(0);
+
+ return (
+  <div style={{ padding: 20 }}>
+    <h1>Counter</h1>
+
+    <h2>{count}</h2>
+
+    <button onClick={() => setCount(count - 1)}>-</button>
+    <button onClick={() => setCount(count + 1)}>+</button>
+    <button onClick={() => setCount(0)}>Reset</button>
+
+  </div>
+ );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("app"));
+root.render(<Counter />);
+
+</script>
+
+ 
 </body>
 </html>
