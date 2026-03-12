@@ -5,11 +5,11 @@ body {
 }
 
 header {
-    border-bottom: 1px solid #f0f0f0; /* Легка лінія знизу для чіткості */
+    border-bottom: 1px solid #f0f0f0; 
 }
 
 .container {
-    max-width: 1200px; /* Обмежуємо ширину, щоб контент не розповзався */
+    max-width: 1200px; 
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@ header {
     padding: 15px 20px;
 }
 
-/* Логотип і текст */
+
 .logo {
     display: flex;
     align-items: center;
@@ -35,7 +35,7 @@ header {
     color: #1a3a4a;
 }
 
-/* Меню навігації */
+
 .menu ul {
     display: flex;
     gap: 30px;
@@ -44,29 +44,29 @@ header {
 
 .menu ul li a {
     text-decoration: none;
-    color: #4a5568; /* Спокійний сірий колір */
+    color: #4a5568; 
     font-size: 15px;
     font-weight: 500;
     transition: all 0.2s ease-in-out;
 }
 
-/* Ефект при наведенні на посилання */
+
 .menu ul li a:hover {
-    color: #66bb6a; /* Стає зеленим тільки при наведенні */
+    color: #66bb6a; 
 }
 
-/* Клас для активної сторінки (якщо захочете виділити "Home") */
+
 .menu ul li a.active {
     color: #66bb6a;
 }
 
-/* Кнопка "Get Started" */
+
 .btn {
     padding: 10px 24px;
     background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
     color: white;
     border: none;
-    border-radius: 50px; /* Повністю закруглена як на фото */
+    border-radius: 50px; 
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
@@ -74,9 +74,9 @@ header {
     box-shadow: 0 4px 12px rgba(102, 187, 106, 0.2);
 }
 
-/* Ефекти для кнопки */
+
 .btn:hover {
-    transform: translateY(-1px); /* Легке підняття */
+    transform: translateY(-1px); 
     box-shadow: 0 6px 15px rgba(102, 187, 106, 0.3);
 }
 
@@ -84,10 +84,10 @@ header {
     transform: translateY(0);
 }
 
-/* Основний блок Hero */
+
 .hero {
-    padding: 100px 0; /* Відступи зверху та знизу */
-    background-color: #fdfcf9; /* Дуже світлий теплий фон */
+    padding: 100px 0; 
+    background-color: #fdfcf9; 
 }
 
 .hero-inner {
@@ -100,13 +100,13 @@ header {
     gap: 40px;
 }
 
-/* Текстовий контент */
+
 .hero-content {
     flex: 1;
 }
 
 .hero-content h1 {
-    font-size: 64px; /* Робимо акцент на великому заголовку */
+    font-size: 64px; 
     font-weight: 700;
     line-height: 1.1;
     color: #242424;
@@ -121,7 +121,7 @@ header {
     max-width: 480px;
 }
 
-/* Блок з кнопками */
+
 .hero-btns {
     display: flex;
     gap: 16px;
@@ -163,7 +163,7 @@ header {
     background-color: #f5f5f5;
 }
 
-/* Зображення та картка */
+
 .hero-image-container {
     flex: 1;
     position: relative;
@@ -175,15 +175,15 @@ header {
     width: 100%;
     max-width: 520px;
     height: auto;
-    border-radius: 40px; /* Велике закруглення як на фото */
+    border-radius: 40px; 
     object-fit: cover;
 }
 
-/* Плаваюча біла картка */
+
 .stat-card {
     position: absolute;
     bottom: 30px;
-    left: -20px; /* Вона трохи "наповзає" на текстову частину */
+    left: -20px; 
     background: white;
     padding: 16px 24px;
     border-radius: 20px;
