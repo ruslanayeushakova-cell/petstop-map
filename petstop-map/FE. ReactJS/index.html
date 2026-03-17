@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Bootstrap demo</title>
+</head>
+<body>
+    <div id="app"></div>
+ <!-- React CDN (development builds) -->
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+ <!-- Babel (optional): enables JSX in the browser -->
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ <!-- Example (optional) -->
+        <script type="text/babel">
+        function Counter() {
+            const [count, setCount] = React.useState(0);
+            return (
+            <div style={{ padding: 20 }}>
+                <h1>Counter</h1>
+                <h2>{count}</h2>
+                <button onClick={() => setCount(count - 1)}>-</button>
+                <button onClick={() => setCount(count + 1)}>+</button>
+                <button onClick={() => setCount(0)}>Reset</button>
+            </div>
+ );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("app"));
+root.render(<Counter />);
+
+</script>
+</body>
+</html>
