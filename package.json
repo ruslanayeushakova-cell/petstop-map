@@ -1,0 +1,24 @@
+{
+  "name": "petstop-map",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslanayeushakova-cell/petstop-map.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruslanayeushakova-cell/petstop-map/issues"
+  },
+  "homepage": "https://github.com/ruslanayeushakova-cell/petstop-map#readme",
+  "dependencies": {
+    "mysql2": "^3.20.0",
+    "sequelize": "^6.37.8"
+  }
+}
