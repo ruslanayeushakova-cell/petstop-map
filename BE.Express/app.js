@@ -6,6 +6,14 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.post('/', (req, res) => {
+    res.send({mesage: req.query});
+});
+
+
+app.delete('/', (req, res) => {
+    res.send('Hello World!');
+});
 app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
