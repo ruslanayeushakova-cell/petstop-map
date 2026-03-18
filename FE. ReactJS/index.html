@@ -14,21 +14,29 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
  <!-- Example (optional) -->
         <script type="text/babel">
-              setInterval(function() {
-                     console.log(45555)
-              })
-       
+             
        function Counter() {
             const [count, setCount] = React.useState(0);
+
+              React.useEffect(() => {
+                     setInterval(() => {
+                            setCount(prevCount => prevCount + 5);
+                     }, 1000);
+
+                     setInterval(() => {
+                            setCount(prevCount => prevCount - 1);
+                     }, 5000);
+              }, []);
+
             return (
-            <div style={{ padding: 20 }}>
+              <div style={{ padding: 20 }}>
                 <h1>Counter</h1>
                 <h2>{count}</h2>
                 <button onClick={() => setCount(count - 1)}>-</button>
                 <button onClick={() => setCount(count + 1)}>+</button>
                 <button onClick={() => setCount(0)}>Reset</button>
-            </div>
- );
+               </div>
+              );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("app"));
